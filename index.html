@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+        <link rel="stylesheet" href="user.css">
+
+    </head>
+    <body>
+        <div class="venky">
+            <div class="formbox">
+                <div class="buttonBox">
+                <div id="btn">
+                    
+                </div>
+                    <button type="button" onclick="login()" id="btn1" class="toggleBtn">Log In</button>
+                     <button type="button" id="btn2" onclick="register()"class="toggleBtn">Register</button>
+                     
+               </div>
+                
+                <form id="login" class="inputGrp">
+                    <input type="text" placeholder="User ID" class="inputField" required>
+                     <input type="text" placeholder="Enter Password" class="inputField" required>
+                     <input type="checkbox" class="checkBox"> <span>Remember me</span>
+                     <button type="submit" class="submitBtn">Log in</button>
+                
+                </form>
+                
+                
+                
+                 <form id="register" class="inputGrp">
+                    <input type="text" placeholder="Your Name" class="inputField" required>
+                    <input type="email" placeholder="Your email" class="inputField" required>
+                     <input type="text" placeholder="Enter Password" class="inputField" required>
+                     <input type="checkbox" class="checkBox"> <span>I agree to the terms & conditions </span>
+                     <button type="submit" class="submitBtn">Register</button>
+                
+                </form>
+                
+                
+                
+            </div>
+        </div>
+        
+     <script>
+         var x= document.getElementById("login");
+         var y= document.getElementById("register");
+         var z= document.getElementById("btn");
+         var a= document.getElementById("btn1");
+         var b= document.getElementById("btn2");
+         
+         
+      function register(){
+          x.style.left= "-400px";
+          y.style.left="5px";
+          z.style.left="95px";
+          b.style.color="#fff";
+          a.style.color="#333";
+          
+      }
+      
+      function login(){
+          y.style.left= "400px";
+          x.style.left="5px";
+          z.style.left="0px";
+          a.style.color="#fff";
+          b.style.color="#333";
+      }
+      
+      
+         
+         
+     </script>   
+        
+        
+        
+    </body>
+</html>
